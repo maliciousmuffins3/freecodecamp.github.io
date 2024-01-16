@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <title>Your Survey App</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+
+        <form id="survey-form">
+            <!-- Name Input -->
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <!-- Email Input -->
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <!-- Number Input -->
+            <label for="number" id="number-label">Age (Optional):</label>
+            <input type="number" id="number" placeholder="Enter a number" min="1" max="100">
+
+            <!-- Dropdown Select -->
+            <label for="dropdown">Select an option:</label>
+            <select id="dropdown">
+                <option disabled selected>Which option best describes your current role?</option>
+                <option value="option1">Student</option >
+                <option value="option2">Full Time Job</option>
+                <option value="option2">Full Time Learner</option>
+                <option value="option2">Prefer not to say</option>
+                <option value="option2">Others</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <label>Would you recommend freeCodeCamp to a friend?</label>
+            <div>
+                <input type="radio" id="radio1" name="radio-group" value="radio1">
+                <label for="radio1">Definitely</label>
+            </div>
+            <div>
+                <input type="radio" id="radio2" name="radio-group" value="radio2">
+                <label for="radio2">Maybe</label>
+            </div>
+            <div>
+                <input type="radio" id="radio3" name="radio-group" value="radio3">
+                <label for="radio3">Not sure</label>
+            </div>
+
+
+            <!-- Checkboxes -->
+            <label>Choose multiple:</label>
+            <div>
+                <input type="checkbox" id="checkbox1" value="checkbox1">
+                <label for="checkbox1">Checkbox 1</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox2" value="checkbox2">
+                <label for="checkbox2">Checkbox 2</label>
+            </div>
+
+            <!-- Textarea for Additional Comments -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" placeholder="Enter your comments"></textarea>
+
+            <!-- Submit Button -->
+            <div class="submit-btn">
+            <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

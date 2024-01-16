@@ -1,0 +1,323 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation</title>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>Technical Documentation</header>
+            <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+            <a class="nav-link" href="#HTML_and_HTML5">HTML and HTML5</a>
+            <a class="nav-link" href="#CSS">CSS</a>
+            <a class="nav-link" href="#Responsive_Web_Design">Responsive Web Design</a>
+            <a class="nav-link" href="#Media_Query">Media Query</a>
+        </nav>
+
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>JavaScript and Java</header>
+            <!-- Content for JavaScript and Java -->
+            <p>
+                JavaScript and Java are two programming languages with distinct purposes and applications. JavaScript, often known as the language of the web, is a dynamic, interpreted language primarily employed for client-side scripting in web browsers. It enables the creation of interactive and responsive user interfaces, facilitating tasks such as form validation and real-time updates on web pages.       
+            </p>
+            <p>
+                On the other hand, Java is a general-purpose, object-oriented language designed for versatility and platform independence. Java applications are compiled into bytecode, which runs on the Java Virtual Machine (JVM), allowing them to be executed across various platforms. Java finds application in diverse domains, including enterprise software, mobile app development (particularly on Android), and web development for server-side applications. Despite their shared name, JavaScript and Java differ significantly in their use cases, execution environments, and language features.
+            </p>
+            <code>
+                <div class="comment">
+                    //The classic "Hello, World!" example prints a message to the console, demonstrating the use of the console.log() function
+                </div>
+                console.log("Hello, World!");
+                <div class="comment">
+                    // The alert function displays a pop-up message, showcasing another way to interact with users.<br>
+                </div>
+                let greeting = "Welcome to JavaScript! <br>
+                alert(greeting);  <br>
+                console.log("Hello, World!");
+                <div class="comment">
+                    //// The code prompts the user for their name, creates a personalized message, and logs it to the console.
+                </div>
+                let userName = prompt("What is your name?");<br>
+                let message = "Hello, " + userName + "!";<br>
+                console.log(message);
+            </code>
+            <ul>
+                <li>
+                    Dynamically-typed scripting language primarily used for front-end web development.
+                </li>
+                <li>
+                    Enables the creation of interactive and dynamic content within web browsers.
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="HTML_and_HTML5">
+            <header>HTML and HTML5</header>
+            <!-- Content for HTML and HTML5 -->
+            <p>
+                HTML (Hypertext Markup Language) is the foundational language for structuring content on the web, using tags to define elements like headings, paragraphs, and images. It provides the structure for static web pages and serves as a basis for CSS and JavaScript.</p>
+            <p>
+                HTML5, introduced in 2014, is the fifth version of HTML with significant enhancements. It supports multimedia elements, introduces semantic tags for improved document structure, and includes features like &lt;canvas&gt; for graphics and &lt;svg&gt; for scalable vector graphics. HTML5, in conjunction with CSS3 and JavaScript, forms a robust platform for building dynamic and adaptive web applications across various devices.
+            </p>
+            <code>
+                <div class="comment">
+                    &lt;!--Text with biggest heading size--&gt;
+                </div>
+                &lt;<span class="selector">h1</span>&gt;Hello, World!&lt;<span class="selector">/h1</span>&gt;
+                <div class="comment">
+                    &lt;!--The tag is used to embed images in a web page.--&gt;
+                </div>
+                &lt;<span class="selector">img</span> <span class="comment1">src</span>="example.jpg" <span class="comment1">alt</span>="Example Image"&gt;
+                <div class="comment">
+                    &lt;!--This Tag is used to create hyperlinks.--&gt;
+                </div>
+                &lt;<span class="selector">a</span> <span class="comment1">href</span>="https://example.com" <span class="comment1">target</span>="_blank" <span class="comment1">rel</span>="noopener noreferrer"&gt;Click Here&lt;<span class="selector">/a</span>&gt;
+            </code>
+            <ul>
+                <li>Used to structure content on the web, defining elements like headings, paragraphs, and images.</li>
+                <li>Introduces new features, including support for multimedia elements, semantic tags, and enhanced capabilities for building dynamic and responsive web applications.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="CSS">
+            <header>CSS</header>
+            <!-- Content for CSS -->
+            <p>
+                Cascading Style Sheets, or CSS, is a crucial technology in web development that enhances the presentation and styling of HTML documents. Introduced as a separate language from HTML, CSS allows developers to control the layout, colors, fonts, and overall appearance of web pages. By applying styles to HTML elements, CSS plays a pivotal role in creating visually appealing and responsive websites, contributing to a consistent and engaging user experience across different devices.
+            </p>
+            <p>
+                CSS operates on a simple principle of selecting HTML elements and defining rules to dictate their visual presentation. Selectors target specific HTML elements, while declarations within curly braces set the desired styles. CSS supports a wide array of properties, enabling developers to customize aspects such as spacing, positioning, and typography. With its modular and cascading nature, CSS permits the creation of reusable styles and ensures a structured approach to web design, fostering maintainability and ease of updates in the development process.
+            </p>
+            <code>
+                <div class="comment">/* Set the font family and text color for the body */</div>
+                <span class="selector">body</span>{<br>
+                    <span class="properties">font-family</span>: 'Arial', sans-serif;<br>
+                    <span class="properties">color</span>: #333;<br>
+                } <br><br>
+                <div class="comment">/* Style headings with a blue color and underline on hover */</div>
+                <span class="selector">h1, h2, h3</span> {<br>
+                    <span class="properties">color</span>: blue;<br>
+                    <div class="comment">/* Add padding and a border to all div elements */</div>
+                    <span class="selector">div</span>{<br>
+                        <span class="properties">padding</span>: 10px;<br>
+                        <span class="properties">border</span>: 1px solid #ccc;<br>
+                    }
+                }
+            </code>
+            <ul>
+                <li>CSS enables precise control over a webpage's visual style, covering aspects like fonts, colors, and layout.</li>
+                <li>Essential for responsive design, CSS facilitates seamless adaptation to various devices and screen sizes through techniques like media queries.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Responsive_Web_Design">
+            <header>Responsive Web Design</header>
+            <!-- Content for Responsive Web Design -->
+            <p>
+                Responsive web design is a crucial approach to crafting websites that seamlessly adapt to various screen sizes and devices. With the proliferation of smartphones, tablets, and diverse browsing platforms, ensuring a consistent and user-friendly experience has become paramount. Responsive design achieves this by employing flexible grids, fluid images, and media queries, allowing the layout and content of a website to dynamically adjust based on the user's device, fostering optimal accessibility and usability.
+            </p>
+            <p>
+                Responsive web design is a crucial approach to crafting websites that seamlessly adapt to various screen sizes and devices. With the proliferation of smartphones, tablets, and diverse browsing platforms, ensuring a consistent and user-friendly experience has become paramount. Responsive design achieves this by employing flexible grids, fluid images, and media queries, allowing the layout and content of a website to dynamically adjust based on the user's device, fostering optimal accessibility and usability.
+            </p>
+            <code>
+                &lt;<span class="selector">meta</span> <span class="attribute">name</span>="viewport" <span class="attribute">content</span>="width=device-width, <span class="attribute">initial-scale</span>=1.0"&gt;<br><br>
+                <span class="query">@media screen and (min-width: 600px) </span>{<br>
+                    <span class="comment">/* Styles for screens 600px and wider */</span><br>
+                   }
+            </code>
+            <ul>
+                <li>
+                    Designing with fluid grids and flexible layouts allows content to dynamically adjust to different screen sizes. Using relative units like percentages for widths instead of fixed pixels ensures a proportional and adaptable structure that accommodates various devices.</li>
+                <li>
+                    Leveraging CSS media queries enables the application of specific styles based on the characteristics of the device, such as screen width, height, or resolution. By defining breakpoints in your stylesheets, you can optimize the layout and appearance of your website for different devices, ensuring a consistent and user-friendly experience across a range of screens.
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Media_Query">
+            <header>Media Query</header>
+            <!-- Content for Media Query -->
+            <p>
+                Media queries, a core feature of CSS3, enable responsive web design by allowing developers to tailor styles based on the characteristics of the user's device. These queries respond to factors like screen width, height, or orientation, ensuring a seamless user experience across diverse devices.
+            </p>
+            <p>
+                Embedded in stylesheets, media queries enable the creation of a single, adaptable codebase. By defining breakpoints, developers can apply specific styles at different screen sizes, fostering a design that dynamically adjusts for optimal usability across a spectrum of devices. Media queries serve as a fundamental tool for meeting the demands of the ever-evolving landscape of web browsing.
+            </p>
+            <code><span class="selector">.mobile-only</span>{<br>
+                <span class="properties">display</span>: block; <span class="comment">/* Visible by default on all screens */</span><br>
+              } <br> <br>
+              
+              <span class="query">@media screen and (min-width: 600px)</span>{<br><br>
+                <span class="selector">.mobile-only</span>{<br>
+                  <span class="properties">display</span>: none; <span class="comment">/* Hidden on screens wider than 600px*/
+                    <br>
+                  </span><br>
+                &nbsp;} <br><br>
+              }</code>
+            <ul>
+                <li>CSS media queries tailor styles based on device characteristics, ensuring a consistent look across various screens.</li>
+                <li>Media queries enable the creation of layouts that dynamically adjust elements for optimal display on diverse devices.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+:root{
+    --white: rgb(241, 240, 239);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.selector{
+    color: red;
+}
+
+.properties{
+    color: blue
+}
+
+
+#navbar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 240, 239);
+    padding: 20px 0px;
+}
+
+nav > * {
+    padding-block: 10px;
+    background-color: rgb(241, 240, 239);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+nav > a{
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(102, 102, 102);
+}
+
+nav > a:hover{
+    background-color: rgb(217, 218, 218);
+    transform: scale(1.1);
+}
+
+.main-section{
+    padding: 100px 100px 50px 400px;
+    height: fit-content;
+}
+
+
+nav header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    background-color: #0a0a22;
+    color: white;
+    transform: scale(1.1);
+    text-shadow: 1px 0px 1px black, 2px 0px 10px white;
+}
+
+/* main-content */
+
+
+section header{
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+p{
+    margin: 20px 0px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.query{
+    color: rgb(0, 4, 255);
+}
+.comment{
+    color: green;
+    margin-top: 20px;
+}
+
+.comment1{
+    color: rgb(1, 103, 255);
+}
+
+.attribute{
+    color: green;
+}
+
+ul{
+    padding: 20px 0px;
+}
+li{
+    margin: 0px 0px 10px 30px;
+    font-family: sans-serif;
+}
+
+code{
+    background-color: rgb(243, 241, 241);
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-size: 1.1em;
+}
+
+@media (max-width:740px){
+    #navbar{
+        position: relative;
+        width: 100%;
+        height: 200px;
+    }
+
+    .main-section{
+        padding: 200px 40px 50px 40px;
+        height: fit-content;
+    }
+
+    .main-section > *{
+        margin-bottom: 30px;
+    }
+
+    nav header{
+        font-size: 1.5em;
+    }
+
+    section header{
+        font-size: 2em;
+        text-wrap: wrap;
+        margin-left: -10px;
+    }
+
+}
+
+
+
+
+
+
+** end of undefined **
+

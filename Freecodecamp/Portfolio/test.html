@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar {
+        display: flex;
+        align-items: center;
+    }
+
+    #navbar span {
+        flex-grow: 1; /* This allows the span to take up as much space as possible on the left */
+    }
+
+    #navbar a {
+        margin-left: auto; /* This pushes the <a> elements to the right */
+    }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <span>porfolio</span>
+        <a href="#welcome-section">Welcome</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a id="profile-link" href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </nav>
+    
+</body>
+</html>

@@ -1,0 +1,175 @@
+:root{
+    --gray: #eeeeee;
+    --yellow: #2396f5;
+    --dark-gray: #dddddd;
+}
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ }
+
+ a{
+    text-decoration: none;
+ }
+
+img{
+    height: 30px;
+    margin-top: 5px;
+ }
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    align-items: center;
+    box-shadow: 0px 0px 10px black;
+}
+
+nav{
+    padding: 20px 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+}
+nav a{
+    padding: 0px 20px;
+    text-transform: uppercase;
+    color: black;
+    font-family: sans-serif;
+}
+#section1{
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-family: sans-serif;
+}
+
+#section1 h1{
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+
+#section2{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#section2 > *{
+    max-width: 350px;
+}
+
+.fa-solid{
+    margin-right: 20px;
+    font-size: 50px;
+    color: var(--yellow);
+}
+
+.watch{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2396f5;
+    box-shadow: 0px 0px 20px black;
+    padding: 100px 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 200px auto;
+    justify-content: center;
+    padding: 40px 80px 20px 80px;
+    background: var(--yellow);
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px rgb(146, 142, 142);
+
+}
+
+form > input[type="email"] {
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(206, 201, 195);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+[placeholder]{
+    text-align: center;
+}
+
+form > input[type="submit"] {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 100px;
+    margin-inline: auto;
+    background-color: var(--dark-gray);
+    font-weight: bold;
+    border: solid 2px black;
+}
+
+label{
+    margin-bottom: 5px;
+    margin-inline: auto;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    padding: 20px 40px;
+    background-color: var(--dark-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer-content > *{
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+@media (max-width:580px){
+    nav{
+        display: none;
+    }
+
+    #section1{
+        padding: 0px 40px;
+        text-align: center;
+    }
+
+    footer > *{
+        margin: 5px 0px;
+        text-align: center;
+    }
+}
